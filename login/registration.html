@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hotel Escober</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+
+<div class="heading">
+<img src="../img/title.jpg"/>
+</div>
+
+
+<div class="navigation">
+   <a href=../index.html>Home</a>
+   <a href="../food/food.html">Food</a>
+   <a href="../facilities/facilities.html">Facilities</a>
+    <a href="../about/about.html">About</a>
+   <a href="../contact/contact.html">Contact</a>
+</div>
+
+
+<div class="body_1">
+  <div class="lg_date">
+    <h3>
+      <script language="javascript">
+        var today = new Date();
+        document.write(today);
+      </script>
+    </h3>
+  </div>
+</div>
+
+
+<script language="javascript">
+  function formValidation(){
+
+    alert("entering form validation");
+
+    var uid = document.registration.user;
+    var passid = document.registration.pass;
+    var phone = document.registration.phone;
+    var uadd = document.registration.address;
+    var uemail = document.registration.email;
+
+    if(userid_validation(uid,5,12)){
+      alert("username check passed");
+    }
+    else {
+      alert("username check failed");
+    }
+
+    if(passid_validation(passid,7,12)){
+      alert("passid check passed")
+    }
+    else {
+      alert("passid check failed");
+    }
+
+    if(phone_validation(phone)){
+       alert("phone no. check passed")
+    }
+    else {
+      alert("phone check failed");
+    }
+
+    if(alphanumeric(uadd)){ 
+       alert("address check passed")
+    }
+    else {
+      alert("address check failed");
+    }
+
+    if(ValidateEmail(uemail)){ 
+      alert("email check passed")
+    } 
+    else {
+      alert("email check failed");
+    }
+       
+    return false;
+    } 
+
+    function userid_validation(uid,mx,my){
+      alert("entering userid validation");
+      var uid_len = uid.value.length;
+      if (uid_len == 0 || uid_len >= my || uid_len < mx) {
+        alert("User Id should not be empty / length be between "+mx+" to "+my);
+        uid.focus();
+        return false;
+      }
+      return true;
+    }
+
+    function passid_validation(passid,mx,my){
+      var passid_len = passid.value.length;
+      if (passid_len == 0 ||passid_len >= my || passid_len < mx){
+        alert("Password should not be empty / length be between "+mx+" to "+my);
+        passid.focus();
+        return false;
+      }
+      return true;
+    }
+
+    function phone_validation(phone)
+    {
+      var phoneno = /^\d{10}$/;
+      if(phone.value.match(phoneno)) {
+          return true;
+      }
+      else {
+           alert("message");
+           return false;
+     }
+   } 
+
+    function alphanumeric(uadd){ 
+      var letters = /^[0-9a-zA-Z]+$/;
+      if(uadd.value.match(letters)){
+        return true;
+      }
+      else{
+        alert('User address must have alphanumeric characters only');
+        uadd.focus();
+        return false;
+      }
+    }
+    function ValidateEmail(uemail){
+      var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+      if(uemail.value.match(mailformat)){
+        return true;
+      }
+
+      else{
+        alert("You have entered an invalid email address!");
+        uemail.focus();
+        return false;
+      } 
+      
+      alert('Form Succesfully Submitted');
+      window.location.reload()
+      return true;
+      }
+
+</script>
+
+<div class="lged">
+
+   <form name = "registration" onsubmit="return formValidation();">
+     <p>
+      <label>Name    :</label> 
+    </p>
+      <input type="text" id="user" name="user" class = "box" />
+     </p>
+     <p>
+      <label>Password: </label></p>
+      <input type="password" id="pass" name="pass" class = "box" />
+     </p>
+     <p>
+      <label>Email   : </label></p>
+      <input type="text" id="email" name="email" class = "box" />
+     </p>
+     <p>
+      <label>Address: </label></p>
+      <input type="text" id="address" name="address" class = "box" />
+     </p>
+     <p>
+      <label>Phone No  : </label></p>
+      <input type="text" id="phone" name="phone" class = "box" />
+     </p>
+     <p></p><p>
+       <input type="submit" id="btn" value="REGISTER" class = "submt" />
+     </p>
+   </form>
+  
+</div>
+
+</body>
+</html>

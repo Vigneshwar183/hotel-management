@@ -1,0 +1,145 @@
+<?php 
+mysql_connect("localhost","root","");
+mysql_select_db("hotel");
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hotel Escober</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+
+
+<div class="Login">
+<a href="../login/login_admin.html">Admin Login</a>
+<a href="../login/login_user.html">User Login</a>
+<a href="../login/registration.html">Registration</a>
+</div>
+
+
+
+<div class="heading">
+<img src="../img/title.jpg"/>
+</div>
+
+
+<div class="navigation">
+   <a href="../index.html">Home</a>
+   <a href="food.html">Food</a>
+   <a href="../facilities/facilities.html">Facilities</a>
+    <a href="../about/about.html">About</a>
+   <a href="../contact/contact.html">Contact</a>
+</div>
+
+
+
+<div class="body_1">
+<div class="lg_date">
+<h3>
+ <script language="javascript">
+ var today = new Date();
+ document.write(today);
+ </script>
+ </h3>
+</div>
+</div>
+
+
+
+
+
+<div class="body_2">
+   
+  <div class = "room_border">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="100 PIPERS Scoach" class = "squaredTwo"><h2>1.100 PIPERS Scotch</h2></p>
+  <img src="../img/Bar/file (1).jpeg">
+  <p>Price:  bottle</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>
+  </div>
+
+
+
+  <div class = "room_border_1">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="PASSPORT Scotch" class = "squaredTwo"><h2>2.PASSPORT Scotch</h2></p>
+  <img src="../img/Bar/file (2).jpeg">
+  <p>Price: bottle</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt"/>
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>
+  </div>
+  
+
+  <div class = "room_border">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="Wisconsin Varietals" class = "squaredTwo"><h2>3.Wisconsin Varietals</h2></p>
+  <img src="../img/Bar/Carrera_33_front_center_large-2000x1476.jpg">
+  <p>Price: bottle</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>  
+  </div>
+  
+
+
+
+  <div class = "room_border_1">
+  <form  method="POST">
+  <p><input type="checkbox" name="selection" value="HUNTER Beer" class = "squaredTwo"><h2>4.HUNTER Beer</h2></p>
+  <img src="../img/Bar/file.jpeg">
+  <p>Price: cane</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>  
+  </div>
+
+
+
+ 
+  <div class = "room_border">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="House Wines by Sycamore Lane" class = "squaredTwo"><h2>5.House Wines by Sycamore Lane</h2></p>
+  <img src="../img/Bar/file (3).jpeg">
+  <p>Price: bottle</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>
+  </div>
+
+
+
+  <div class = "room_border_1">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="Vodka Martini" class = "squaredTwo"><h2>6.Vodka Martini</h2></p>
+  <img src="../img/Bar/file.png">
+  <p>Price: bottle</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>
+  </div>
+
+
+</div>
+
+</body>
+</html>

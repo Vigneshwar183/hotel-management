@@ -1,0 +1,160 @@
+<?php 
+mysql_connect("localhost","root","");
+mysql_select_db("hotel");
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hotel Escober</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+
+
+<div class="Login">
+<a href="../login/login_admin.html">Admin Login</a>
+<a href="../login/login_user.html">User Login</a>
+<a href="../login/registration.html">Registration</a>
+</div>
+
+
+
+<div class="heading">
+<img src="../img/title.jpg"/>
+</div>
+
+
+<div class="navigation">
+   <a href="../index.html">Home</a>
+   <a href="food.html">Food</a>
+   <a href="../facilities/facilities.html">Facilities</a>
+    <a href="../about/about.html">About</a>
+   <a href="../contact/contact.html">Contact</a>
+</div>
+
+
+<div class="body_1_breakfast">
+<div class="lg_date">
+<h3>
+ <script language="javascript">
+ var today = new Date();
+ document.write(today);
+ </script>
+ </h3>
+</div>
+</div>
+
+
+<div class = "body_2_breakfast">
+
+<div class="room_border">
+  <form method="POST">
+	<p><input type="checkbox" name="selection" value="Farmers Breakfast" class = "squaredTwo"><h2>1.Farmers Breakfast</h2><h3>(Scrambled eggs, patty sausage and hash browns)</h3></p>
+  <img src="../img/Breakfast/german-farmers-breakfast.jpg">
+  <p>Price: plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt"/>
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+    </form>
+  </div>
+   
+
+  <div class = "room_border_1">
+  <form method="POST">
+	<p><input type="checkbox" name="selection" value="French Toast" class = "squaredTwo"><h2>2.French Toast</h2><h3>(French toast served with bacon and fresh fruit medley)</h3></p>
+   <img src="../img/Breakfast/French toast served with bacon and fresh fruit medley.jpg">
+  <p>Price: plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+    </form>
+  </div>
+
+
+  <div class="room_border">
+  <form method="POST">
+	<p><input type="checkbox" name="selection" value="Healthy Plate" class = "squaredTwo"><h2>3.Healthy Plate</h2><h3>(Assorted yogurt, your choice of granola or oat bran muffin and fresh fruit medley)</h3></p>
+  <img src="../img/Breakfast/Assorted yogurt, your choice of granola or oat bran muffin and fresh fruit medley).jpg">
+  <p>Price: plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+    </form>
+    </div>
+
+
+    <div class="room_border_1">
+    <form  method="POST">
+    <p><input type="checkbox" name="selection" value="Denver Omlete" class = "squaredTwo"><h2>4.Denver Omelet</h2><h3>(Ham, green pepper, onion, tomato and Wisconsin cheddar cheese served with hash browns)</h3></p>
+    <img src="../img/Breakfast/Denver Omelet.jpg">
+    <p>Price: plate</p>
+    <p>
+    <input type="number" name="number" min=0 value="0" class = "opt" />
+    </p>
+    <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+    </form>
+    </div>
+
+
+    <div class="room_border">
+    <form method="POST">
+    <p><input type="checkbox" name="selection" value="CYO Omelet" class = "squaredTwo"><h2>5.CYO Omelet</h2><h3>(Your choice of 4 ingredients served with hash browns)</h3></p>
+    <img src="../img/Breakfast/CYO Omelet.jpg">
+    <p>Price: plate</p>
+    <p>
+    <input type="number" name="number" min=0 value="0" class = "opt" />
+    </p>
+    <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+    </form>
+    </div>
+
+
+    <div class="room_border_1">
+    <form method="POST">
+    <p><input type="checkbox" name="selection" value="Buffet A(Breakfast)" class = "squaredTwo"><h2>6.Buffet A(Breakfast)</h2><h3>(Assorted juices, fresh fruit medley, scrambled eggs, link sausage, hash browns and assorted muffins)</h3></p>
+    <img src="../img/Breakfast/Buffet A.jpg">
+    <p>Price: plate</p>
+    <p>
+    <input type="number" name="number" min=0 value="0" class = "opt" />
+    </p>
+    <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+    </form>
+    </div>
+
+
+    <div class="room_border">
+    <form method="POST">
+    <p><input type="checkbox" name="selection" value="Buffet B(Breakfast)" class = "squaredTwo"><h2>7.Buffet B(Breakfast)</h2><h3>(Assorted juices, fresh fruit medley, French toast, cheddar sausage pan omelet and sliced ham)</h3></p>
+    <img src="../img/Breakfast/Buffet B.jpg">
+    <p>Price: plate</p>
+    <p>
+    <input type="number" name="number" min=0 value="0" class = "opt" />
+    </p>
+    <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+    </form>
+    </div>
+
+
+    <div class="room_border_1">
+    <form method="POST">
+    <p><input type="checkbox" name="selection" value="Buffet C(Breakfast)" class = "squaredTwo"><h2>8.Buffet C(Breakfast)</h2><h3>(Assorted juices, warm assorted muffins, chorizo and pepper jack pan omelet, sausage, bacon and Santa Fe hash browns)</h3></p>
+    <img src="../img/Breakfast/Buffet C.jpg">
+    <p>Price: plate</p>
+    <p>
+    <input type="number" name="number" min=0 value="0" class = "opt" />
+    </p>
+    <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+    </form>
+    </div>
+
+</div>
+
+</body>
+</html>

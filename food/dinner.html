@@ -1,0 +1,212 @@
+<?php
+mysql_connect("localhost","root","");
+mysql_select_db("hotel");
+?>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Hotel Escober</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+
+<body>
+
+
+<div class="Login">
+<a href="../login/login_admin.html">Admin Login</a>
+<a href="../login/login_user.html">User Login</a>
+<a href="../login/registration.html">Registration</a>
+</div>
+
+
+
+<div class="heading">
+<img src="../img/title.jpg"/>
+</div>
+
+
+<div class="navigation">
+   <a href="../index.html">Home</a>
+   <a href="food.html">Food</a>
+   <a href="../facilities/facilities.html">Facilities</a>
+    <a href="../about/about.html">About</a>
+   <a href="../contact/contact.html">Contact</a>
+</div>
+
+<div class="body_1">
+<div class="lg_date">
+<h3>
+ <script language="javascript">
+ var today = new Date();
+ document.write(today);
+ </script>
+ </h3>
+</div>
+</div>
+
+
+<div class="body_2">
+  
+  <div class = "room_border">	
+  <form  method="POST">
+  <p><input type="checkbox" name="selection" value="Baked Salmon with lemon dill butter" class = "squaredTwo"><h2>1.Baked Salmon with lemon dill butter</h2></p>
+  <img src="../img/Dinner/Baked Salmon with lemon dill butter.jpg">
+  <p>Price: /plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>
+  </div>
+
+
+  <div class = "room_border_1">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="Chicken Parmesan" class = "squaredTwo"><h2>2.Chicken Parmesan</h2></p>
+   <img src="../img/Dinner/Chicken Parmesan.jpg">
+  <p>Price: /plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>
+  </div>
+
+
+  <div class = "room_border">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="Chicken Rosemary" class = "squaredTwo"><h2>3.Chicken Rosemary</h2></p>
+   <img src="../img/Dinner/Chicken Rosemary.jpeg">
+  <p>Price: /plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>
+  </div>  
+
+
+ 
+  <div class = "room_border_1">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="Cordon Bleu" class = "squaredTwo"><h2>4.Cordon Bleu</h2></p>
+   <img src="../img/Dinner/Cordon Bleu.jpg">
+  <p>Price: /plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>  
+  </div>
+  
+
+
+
+  <div class = "room_border">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="Cranberry and Wild Rice Stuffed Chicken Breast" class = "squaredTwo">
+  <h2>5.Cranberry and Wild </h2></p>
+   <img src="../img/Dinner/Cranberry and Wild Rice Stuffed Chicken Breast.jpg">
+  <p>Price: /plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>
+  </div> 
+ 
+
+
+  <div class = "room_border_1">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="Pan Fried Canadian Walleye" class = "squaredTwo"><h2>6.Pan Fried Canadian Walleye</h2></p>
+   <img src="../img/Dinner/Pan Fried Canadian Walleye.jpg">
+  <p>Price: /plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form> 
+  </div>
+   
+
+
+
+  <div class = "room_border">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="Stuffed Pork Chop" class = "squaredTwo"><h2>7.Stuffed Pork Chop</h2></p>
+   <img src="../img/Dinner/Stuffed Pork Chop.jpg">
+  <p>Price: /plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>     
+  </div>
+   
+
+
+  <div class = "room_border_1">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="Tilapia with Crab au Gratin" class = "squaredTwo"><h2>8.Tilapia with Crab au Gratin</h2></p>
+   <img src="../img/Dinner/Tilapia with Crab au Gratin.jpg">
+  <p>Price: /plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>
+  </div>
+
+
+
+  <div class = "room_border">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="Buffet A(Dinner)" class = "squaredTwo"><h2>9.Buffer A(Dinner)</h2><h3>(Stuffed Chicken Parmesan, Smoked Ham Dijon, Tender Beef Tips and Tilapia Au Gratin)</h3></p>
+   <img src="../img/Dinner/Buffet A(Dinner).jpg">
+  <p>Price: /plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>
+  </div>
+
+
+
+  <div class = "room_border_1">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="Buffet B(Dinner)" class = "squaredTwo"><h2>10.Buffer B(Dinner)</h2><h3>(Chicken Cordon Bleu, Roast Barbecued Pork Loin, Top Sirloin with Burgundy Mushrooms,Seafood Newburg, Chicken Rosemary)</h3></p>
+   <img src="../img/Dinner/Buffet B(Dinner).jpg">
+  <p>Price: /plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>
+  </div>
+
+
+
+
+  <div class = "room_border">
+  <form method="POST">
+  <p><input type="checkbox" name="selection" value="Buffet C(Dinner)" class = "squaredTwo"><h2>11.Buffer C(Dinner)</h2><h3>(Chorizo stuffed Mexican Chicken, Brandied Cinnamon Apple Pork, Stuffed Tenderloin Medallions and Crab Stuffed Shrimp)</h3></p>
+   <img src="../img/Dinner/Buffet C(Dinner).jpg">
+  <p>Price: /plate</p>
+  <p>
+  <input type="number" name="number" min=0 value="0" class = "opt" />
+  </p>
+  <p><input type="submit" name="submit" value="ORDER" class = "submt"></p>
+  </form>
+  </div>
+
+
+</div>
+
+</body>
+</html>

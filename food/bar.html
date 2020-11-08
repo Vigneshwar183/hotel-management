@@ -56,10 +56,10 @@ mysql_select_db("hotel");
 <div class="body_2">
    
   <div class = "room_border">
-  <form method="POST">
+  <form action = "process_bar.php" method="POST">
   <p><input type="checkbox" name="selection" value="100 PIPERS Scoach" class = "squaredTwo"><h2>1.100 PIPERS Scotch</h2></p>
   <img src="../img/Bar/file (1).jpeg">
-  <p>Price:  bottle</p>
+  <p>Price:  <?php $rr = mysql_query("SELECT * FROM food_bar WHERE name ='100 PIPERS Scotch' "); $rr_row = mysql_fetch_array($rr); echo "".$rr_row['price'];  ?>/bottle</p>
   <p>
   <input type="number" name="number" min=0 value="0" class = "opt" />
   </p>
@@ -70,10 +70,10 @@ mysql_select_db("hotel");
 
 
   <div class = "room_border_1">
-  <form method="POST">
+  <form action = "process_bar.php" method="POST">
   <p><input type="checkbox" name="selection" value="PASSPORT Scotch" class = "squaredTwo"><h2>2.PASSPORT Scotch</h2></p>
   <img src="../img/Bar/file (2).jpeg">
-  <p>Price: bottle</p>
+  <p>Price: <?php $rr = mysql_query("SELECT * FROM food_bar WHERE name ='PASSPORT Scotch' "); $rr_row = mysql_fetch_array($rr); echo "".$rr_row['price'];  ?>/bottle</p>
   <p>
   <input type="number" name="number" min=0 value="0" class = "opt"/>
   </p>
@@ -83,10 +83,10 @@ mysql_select_db("hotel");
   
 
   <div class = "room_border">
-  <form method="POST">
+  <form action = "process_bar.php" method="POST">
   <p><input type="checkbox" name="selection" value="Wisconsin Varietals" class = "squaredTwo"><h2>3.Wisconsin Varietals</h2></p>
   <img src="../img/Bar/Carrera_33_front_center_large-2000x1476.jpg">
-  <p>Price: bottle</p>
+  <p>Price: <?php $rr = mysql_query("SELECT * FROM food_bar WHERE name ='Wisconsin Varietals' "); $rr_row = mysql_fetch_array($rr); echo "".$rr_row['price'];  ?>/bottle</p>
   <p>
   <input type="number" name="number" min=0 value="0" class = "opt" />
   </p>
@@ -98,10 +98,10 @@ mysql_select_db("hotel");
 
 
   <div class = "room_border_1">
-  <form  method="POST">
+  <form action = "process_bar.php" method="POST">
   <p><input type="checkbox" name="selection" value="HUNTER Beer" class = "squaredTwo"><h2>4.HUNTER Beer</h2></p>
   <img src="../img/Bar/file.jpeg">
-  <p>Price: cane</p>
+  <p>Price: <?php $rr = mysql_query("SELECT * FROM food_bar WHERE name ='HUNTER Beer' "); $rr_row = mysql_fetch_array($rr); echo "".$rr_row['price'];  ?>/cane</p>
   <p>
   <input type="number" name="number" min=0 value="0" class = "opt" />
   </p>
@@ -113,10 +113,10 @@ mysql_select_db("hotel");
 
  
   <div class = "room_border">
-  <form method="POST">
+  <form action = "process_bar.php" method="POST">
   <p><input type="checkbox" name="selection" value="House Wines by Sycamore Lane" class = "squaredTwo"><h2>5.House Wines by Sycamore Lane</h2></p>
   <img src="../img/Bar/file (3).jpeg">
-  <p>Price: bottle</p>
+  <p>Price: <?php $rr = mysql_query("SELECT * FROM food_bar WHERE name ='House Wines by Sycamore Lane' "); $rr_row = mysql_fetch_array($rr); echo "".$rr_row['price'];  ?>/bottle</p>
   <p>
   <input type="number" name="number" min=0 value="0" class = "opt" />
   </p>
@@ -127,10 +127,10 @@ mysql_select_db("hotel");
 
 
   <div class = "room_border_1">
-  <form method="POST">
+  <form action = "process_bar.php" method="POST">
   <p><input type="checkbox" name="selection" value="Vodka Martini" class = "squaredTwo"><h2>6.Vodka Martini</h2></p>
   <img src="../img/Bar/file.png">
-  <p>Price: bottle</p>
+  <p>Price: <?php $rr = mysql_query("SELECT * FROM food_bar WHERE name ='Vodka Martini' "); $rr_row = mysql_fetch_array($rr); echo "".$rr_row['price'];  ?>/bottle</p>
   <p>
   <input type="number" name="number" min=0 value="0" class = "opt" />
   </p>
